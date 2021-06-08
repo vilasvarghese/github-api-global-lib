@@ -10,6 +10,21 @@ def call(Map config = [:]) {
     sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
 }
 
+Entire pipeline code to call
+@Library('shared-library') _
+pipeline{
+	agent any
+	stages {
+		stage("Example") {
+			steps {
+			    helloWorld(name:"Vilas",dayOfWeek:"Monday")
+				//helloWorld()
+
+			}
+		}
+	}
+}
+
 */
 def call(Map config = [:]) {
     sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
