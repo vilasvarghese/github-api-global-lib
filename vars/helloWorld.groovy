@@ -8,6 +8,6 @@ def call() {
     sh "echo Hello World"
 }
 */
-def call(String name, Stirng dt) {
+def call(String name, String dt) {
     sh "echo Hello World ${name} ${dt}"
 }
