@@ -26,6 +26,7 @@ pipeline{
 }
 
 */
-def call(Map config = [:]) {
-    sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
+@Library('shared-library') _
+def call() {
+    sh "echo Hello World"
 }
