@@ -26,6 +26,6 @@ pipeline{
 }
 
 */
-def call() {
-    sh "echo Today is 8th June, 2021"
+def call(Map config = [:]) {
+    sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
 }
