@@ -26,7 +26,6 @@ pipeline{
 }
 
 */
-@Library('shared-library') _
 def call() {
     sh "echo Hello World"
 }
