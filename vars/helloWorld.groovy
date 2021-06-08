@@ -27,5 +27,5 @@ pipeline{
 
 */
 def call() {
-    sh "Today is 8th June, 2021"
+    sh "echo Today is 8th June, 2021"
 }
